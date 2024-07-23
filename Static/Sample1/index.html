@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!---#########################REMIXICONS##################--->
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+>
+<!---#########################CSS##################--->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+<link rel ="stylesheet" href="assets/css/style.css"
+<title>Kitchen login</title>
+
+
+</head>
+<body>
+  <div class= "login">
+    <img src="assets/img/Kitchen2.jpg" alt="kitchen bg image" class = "login__img">
+    <form action="" class="login__form">
+      <h1 class="login__title">Login</h1>
+      <div class="login__content">
+        <div class="login__box">
+          <i class="ri-user-line login__icon"></i>
+          <div class="login__box-input">
+            <input type="email" required  class="login__input" placeholder="">
+            <label for="" class="login__label">
+              Email
+            </label>
+          </div>
+        </div>
+        <!-- ######Password######## -->
+        <!-- <div class="login__box">
+          <i class="ri-lock-2-line login__icon"></i>
+          <div class="login__box-input">
+            <input type="password" required  class="login__input" id="login-pass" placeholder="">
+            <i class="ri-eye-close-fill login__eye" id="login-eye"></i>
+            <label for="" class="login__label">
+              Password
+            </label>
+          </div>
+          
+        </div> -->
+        <div class="login__box">
+          <i class="ri-lock-2-line login__icon"></i>
+          <div class="login__box-input">
+            <i class="ri-eye-close-fill login__eye" id="login-eye"></i>
+            <input type="password" required  class="login__input" placeholder="">
+            <label for="" class="login__label">
+              Password
+            </label>
+          </div>
+        </div>
+        <!-- ######Checkbox######## -->
+        <div class="login__check">
+          <div class="login__check-group">
+            <input type="checkbox" class="login__check-input">
+            <label for="" class="login__check-label">
+              Remmber me
+            </label>
+          </div>
+          <a href="#" class="login__forget">Forgot password?</a>
+
+        </div>
+        
+      </div>
+      <!--End of Login Content-->
+        <!-- ######Button######## -->
+        <button class="login__button" onclick="window.location.href='/index.html';">Login</button>
+      <p class="login__register">
+        Don't have an account? <a href="#" class="login__link">Sign up</a>
+      </p>
+    </form>
+  </div>  
+</body>
+</html>
