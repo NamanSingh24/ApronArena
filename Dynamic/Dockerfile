@@ -20,7 +20,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Copy the Angular build artifacts from the previous stage
-COPY --from=build /app/dist/ApronArena /usr/share/nginx/html
+COPY --from=build /app/dist/google-authentication /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
