@@ -1,0 +1,14 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "To make api Calls",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Akash_Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
