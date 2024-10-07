@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
   encapsulation:ViewEncapsulation.None
@@ -13,7 +14,12 @@ import { RouterLink } from '@angular/router';
 export class NavbarComponent {
 
    toggle:boolean = false;
-   Changetoggle(){
+   TogglerOn(){
     this.toggle = !this.toggle;
+    console.log(this.toggle);
    }
+    TogglerOff(){
+      this.toggle = false;
+      console.log(this.toggle);
+    }
 }
