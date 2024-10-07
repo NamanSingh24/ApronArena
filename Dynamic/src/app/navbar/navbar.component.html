@@ -1,6 +1,6 @@
 <header class="header_section">
   <div class="container">
-    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+    <nav class="navbar navbar-expand-lg  custom_nav-container pt-3">
       <a class="navbar-brand" routerLink="/">
         <img src="images/logo.png" alt="" /><span>
           ApronArena
@@ -17,7 +17,7 @@
       </button>
 
       <!-- Navbar collapse content -->
-      <div [ngClass]="toggle ? 'navbar-collapse' : 'collapse'" id="navbarSupportedContent">
+      <div [ngClass]="toggle || screenWidth ? 'navbar-collapse' : 'collapse'" id="navbarSupportedContent">
         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
           <ul class="navbar-nav">
             <li class="nav-item active">
