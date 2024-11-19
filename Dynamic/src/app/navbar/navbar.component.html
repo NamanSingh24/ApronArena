@@ -1,3 +1,4 @@
+
 <header class="header_section">
   <div class="container">
     <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
@@ -6,40 +7,31 @@
           ApronArena
         </span>
       </a>
-      
-      <!-- Navbar toggler button -->
-      <button class="navbar-toggler" type="button" 
-        (click)="TogglerOn()" 
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Navbar collapse content -->
-      <div [ngClass]="toggle ? 'navbar-collapse' : 'collapse'" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" (click)="TogglerOff()" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav  ">
+            <li class="nav-item active" >
+              <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="TogglerOff()" routerLink="/contest">Contests</a>
+              <a class="nav-link" routerLink="/contest"> Contests</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="TogglerOff()" routerLink="/recipes">Recipes</a>
+              <a class="nav-link" routerLink="/recipes"> Recipes </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="TogglerOff()" routerLink="/contact">Contact Us</a>
+              <a class="nav-link"  routerLink="/contact">Contact us</a>
             </li>
           </ul>
-
           <div class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-            <button class="btn my-2 my-sm-0 nav_search-btn" (click)="TogglerOff()" type="submit"></button>
+            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
           </div>
         </div>
-        
-        <!-- Get a Quote button -->
         <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
           <a routerLink="/">
             Get a Quote
