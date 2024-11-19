@@ -99,7 +99,7 @@ a:focus {
   text-transform: uppercase;
 }
 
-@media (max-width: 1120px) {
+/* @media (max-width: 1120px) {
   .header_section{
     height: auto;
   }
@@ -124,4 +124,4 @@ a:focus {
         max-width: 1170px;
     }
 
-}
+} */
