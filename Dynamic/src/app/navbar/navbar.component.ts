@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -12,21 +12,8 @@ import { RouterLink } from '@angular/router';
 
 })
 export class NavbarComponent {
-  screenWidth:boolean;
-  constructor() {
-    this.screenWidth =  window.innerWidth>992?true:false;
-    
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event:any) {
-    this.screenWidth = event.target.innerWidth>992?true:false;
-    
-    console.log(`Width: ${this.screenWidth}`);
-  }
 
    toggle:boolean = false;
-
    TogglerOn(){
     this.toggle = !this.toggle;
     console.log(this.toggle);
